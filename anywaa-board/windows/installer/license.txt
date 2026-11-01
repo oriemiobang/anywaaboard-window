@@ -1,0 +1,12 @@
+Anywaa Board for Windows
+Copyright (c) 2026 Bella Technologies
+
+This installer contains the Anywaa Board Windows keyboard layout generated
+with Microsoft Keyboard Layout Creator.
+
+The keyboard layout has not been tested on every Windows configuration.
+Installers should be distributed only after the Windows 10 and Windows 11
+acceptance tests in the project documentation have passed.
+
+By installing this software, you agree to use it in accordance with the
+approved Anywaa Board license and applicable laws.
