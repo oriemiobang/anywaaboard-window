@@ -2,6 +2,11 @@
 
 ## Current state
 
+Brand assets are stored in the repository `assets/` directory. The supplied
+Anywaa Board icon is used for browser-extension icons and the Windows
+installer icon. The supplied Bella Technologies mark is used in the extension
+popup and NSIS installer header.
+
 The native layout source is in [`layout/anywaa_board.klc`](layout/anywaa_board.klc).
 It has not yet been compiled into an installer. Compilation requires
 [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134)
@@ -52,3 +57,37 @@ the v1.0.0 release-note template is in
 [`release-notes/windows-v1.0.0.md`](release-notes/windows-v1.0.0.md). Until
 the package exists and passes Windows 10 and Windows 11 testing, do not treat
 the MKLC output as a production installer.
+
+## AutoHotkey fallback
+
+[`AnywaaBoard.ahk`](AnywaaBoard.ahk) provides the same vowel mappings and adds
+the five Dha Anywaa digraphs for computers where a keyboard layout cannot be
+installed. It requires [AutoHotkey v2](https://www.autohotkey.com/).
+
+Run the source by double-clicking `AnywaaBoard.ahk`. The script remains in the
+system tray and only intercepts the documented Right Alt combinations. Use the
+tray menu to open this guide, enable or disable startup, or exit.
+
+The supplied Anywaa Board icon is used for the tray icon when the source is
+run from this repository and is embedded as the compiled executable icon.
+
+To create the standalone executable, install AutoHotkey v2 and run:
+
+```powershell
+.\windows\build-ahk.ps1
+```
+
+The script expects `Ahk2Exe.exe` in a standard AutoHotkey installation path.
+Alternatively, provide an explicit compiler path:
+
+```powershell
+.\windows\build-ahk.ps1 -Ahk2ExePath "C:\Path\To\Ahk2Exe.exe"
+```
+
+The output is `windows/dist/AnywaaBoard_Script.exe`. It must be tested on a
+clean machine without AutoHotkey before release. See
+[`milestone-2-test-matrix.md`](milestone-2-test-matrix.md).
+
+Generated files under `windows/build/` and `windows/dist/` are excluded from
+source control. Attach the tested executable to the GitHub release instead of
+committing it to the repository.

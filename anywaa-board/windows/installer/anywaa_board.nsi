@@ -17,6 +17,8 @@ ManifestDPIAware true
 !define APP_WEBSITE "https://bellatechnologies.com"
 !define APP_UNINSTALL_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\AnywaaBoard"
 !define MKLC_SETUP "..\build\mklc_output\setup.exe"
+!define APP_ICON "assets\anywaa-board.ico"
+!define BRAND_BITMAP "assets\bella-technologies.bmp"
 
 Name "${APP_NAME} ${APP_VERSION}"
 OutFile "..\dist\AnywaaBoard_Setup_v${APP_VERSION}.exe"
@@ -35,6 +37,11 @@ VIAddVersionKey "FileDescription" "Dha Anywaa keyboard layout installer"
 VIAddVersionKey "FileVersion" "${APP_VERSION}"
 
 !define MUI_ABORTWARNING
+!define MUI_ICON "${APP_ICON}"
+!define MUI_UNICON "${APP_ICON}"
+!define MUI_HEADERIMAGE
+!define MUI_HEADERIMAGE_BITMAP "${BRAND_BITMAP}"
+!define MUI_HEADERIMAGE_RIGHT
 !define MUI_WELCOMEPAGE_TITLE "${APP_NAME} setup"
 !define MUI_WELCOMEPAGE_TEXT "This wizard installs the ${APP_NAME} Dha Anywaa keyboard layout."
 !define MUI_FINISHPAGE_RUN

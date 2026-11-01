@@ -3,6 +3,9 @@
 Anywaa Board adds Dha Anywaa vowel characters to Windows through a native
 keyboard layout.
 
+For computers where a keyboard layout cannot be installed, this release also
+provides an AutoHotkey v2 fallback with digraph shortcuts.
+
 ## Installation
 
 1. Download `AnywaaBoard_Setup_v1.0.0.exe` from this release.
@@ -27,8 +30,15 @@ keyboard layout.
 | AltGr + Shift + X | Ø |
 
 All unmodified keys behave like the standard US QWERTY layout. Digraph
-shortcuts are planned for the AutoHotkey edition and are not part of this
-native layout release.
+shortcuts are available through the AutoHotkey edition:
+
+| Press | Inserts |
+|---|---|
+| AltGr + D / N / G / T / Y | dh / nh / ng / th / ny |
+| AltGr + Shift + D / N / G / T / Y | DH / NH / NG / TH / NY |
+
+The `.ahk` asset requires AutoHotkey v2. The compiled
+`AnywaaBoard_Script.exe` asset does not require AutoHotkey to be installed.
 
 ## Uninstallation
 

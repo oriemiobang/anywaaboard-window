@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anywaa Board</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="../icons/icon-48.png" alt="">
+    <div>
+      <h1>Anywaa Board</h1>
+      <p>Dha Anywaa keyboard</p>
+    </div>
+  </header>
+  <main>
+    <label class="toggle-row" for="toggle">
+      <span>Enable on this site</span>
+      <input id="toggle" type="checkbox">
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+    <p id="status" class="status" role="status"></p>
+    <p id="word-count" class="stat">Words learned: 0</p>
+    <a id="guide-link" class="guide" href="#">View key mapping guide</a>
+    <footer class="publisher">
+      <img src="../assets/bella-technologies.jpg" alt="Bella Technologies">
+      <span>by Bella Technologies</span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
