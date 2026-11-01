@@ -38,7 +38,7 @@ installer has been tested on real Windows 10 and Windows 11 machines.
 - [ ] Attach `AnywaaBoard.ahk` and `AnywaaBoard_Script.exe` to the GitHub release.
 
 ## Milestone 3 browser extension
-
+öïøäëdh dh  ny ng 
 - [ ] Run `browser-extension/TESTING.md` in Chrome.
 - [ ] Run `browser-extension/TESTING.md` in Firefox.
 - [ ] Build the Chrome ZIP with `package-extension.ps1 -Browser chrome`.
@@ -49,8 +49,8 @@ installer has been tested on real Windows 10 and Windows 11 machines.
 
 ## Final release gate
 
-- [ ] Replace the installer license placeholder with Bella Technologies'
-  approved legal license text.
+- [x] Replace the installer license placeholder with the approved Bella
+  Technologies proprietary license text.
 - [ ] Confirm the GitHub repository URL used by the mapping-guide links.
 - [ ] Confirm the public privacy-policy URL is live over HTTPS.
 - [ ] Record tool versions and test results for every supported platform.

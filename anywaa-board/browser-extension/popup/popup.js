@@ -1,6 +1,6 @@
 (() => {
   const extensionApi = globalThis.browser ?? globalThis.chrome;
-  const guideUrl = "https://github.com/oriemiobang/anywaaboard-window/blob/main/windows/README.md";
+  const guideUrl = "https://github.com/oriemiobang/anywaaboard-window/blob/main/anywaa-board/windows/README.md";
   const toggle = document.querySelector("#toggle");
   const status = document.querySelector("#status");
   const wordCount = document.querySelector("#word-count");

@@ -1,6 +1,6 @@
 (() => {
   const extensionApi = globalThis.browser ?? globalThis.chrome;
-  const GUIDE_URL = "https://github.com/oriemobang/anywaaboard-window/blob/main/windows/README.md";
+  const GUIDE_URL = "https://github.com/oriemiobang/anywaaboard-window/blob/main/anywaa-board/windows/README.md";
   const MAPPINGS = Object.freeze({
     a: "ä", e: "ë", i: "ï", o: "ö", x: "ø",
     d: "dh", n: "nh", g: "ng", t: "th", y: "ny",

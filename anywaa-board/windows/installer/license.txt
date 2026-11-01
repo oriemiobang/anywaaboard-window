@@ -1,12 +1,48 @@
-Anywaa Board for Windows
-Copyright (c) 2026 Bella Technologies
+ANYWAA BOARD FOR WINDOWS
+PROPRIETARY SOFTWARE LICENSE
 
-This installer contains the Anywaa Board Windows keyboard layout generated
-with Microsoft Keyboard Layout Creator.
+Copyright (c) 2026 Bella Technologies. All rights reserved.
 
-The keyboard layout has not been tested on every Windows configuration.
-Installers should be distributed only after the Windows 10 and Windows 11
-acceptance tests in the project documentation have passed.
+1. Grant of license
 
-By installing this software, you agree to use it in accordance with the
-approved Anywaa Board license and applicable laws.
+Bella Technologies grants you a limited, non-exclusive, non-transferable,
+revocable license to install and use the Anywaa Board for Windows software
+and its accompanying keyboard layout on devices that you own or are
+authorized to use.
+
+2. Restrictions
+
+You may not, without prior written permission from Bella Technologies:
+
+  a. redistribute, publish, sublicense, rent, lease, or sell the software;
+  b. modify, adapt, translate, reverse engineer, decompile, or disassemble
+     the software, except to the extent that applicable law expressly permits
+     such activity; or
+  c. remove or alter copyright, trademark, attribution, or other proprietary
+     notices.
+
+3. Ownership
+
+The software, keyboard layout, source materials, branding, and documentation
+remain the property of Bella Technologies and its licensors. This license
+does not transfer ownership or grant any rights not expressly stated here.
+
+4. Disclaimer and limitation of liability
+
+The software is provided "AS IS" and "AS AVAILABLE", without warranties of
+any kind, express or implied, to the maximum extent permitted by applicable
+law. Bella Technologies is not liable for indirect, incidental, special,
+consequential, or punitive damages arising from or related to the use of the
+software, to the maximum extent permitted by applicable law.
+
+5. Termination
+
+This license terminates automatically if you breach its terms. Upon
+termination, you must stop using the software and remove all copies in your
+possession or control.
+
+By installing the software, you acknowledge that you have read and agree to
+these terms.
+
+For permissions beyond this license, contact Bella Technologies through its
+official support channel.

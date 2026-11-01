@@ -11,7 +11,7 @@
 ; Only the listed RAlt combinations are intercepted. Unbound keys retain
 ; their normal Windows behavior.
 
-global MappingGuideUrl := "https://github.com/oriemiobang/anywaaboard-window/blob/main/windows/README.md"
+global MappingGuideUrl := "https://github.com/oriemiobang/anywaaboard-window/blob/main/anywaa-board/windows/README.md"
 
 ; Vowels and special character.
 RAlt & a:: SendDha("ä", "Ä")
