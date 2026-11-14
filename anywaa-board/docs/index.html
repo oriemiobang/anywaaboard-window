@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Anywaa Board — Free Dha Anywaa (Anuak) Keyboard for Windows</title>
+  <meta name="title" content="Anywaa Board — Free Dha Anywaa (Anuak) Keyboard for Windows">
+  <meta name="description" content="Download Anywaa Board for Windows. Free, lightweight Dha Anywaa (Anuak) keyboard tool. Type Anywaa vowels (ä, ë, ï, ö, ø) and digraphs (dh, nh, ng, th, ny) easily on Windows 10 & 11.">
+  <meta name="keywords" content="anywaa board, anywaa keyboard, dha anywaa keyboard, anuak keyboard, anuak keyboard for windows, dha anywaa keyboard for windows, download anywaa board, anywaaboard.exe, type anuak windows, anywaa alphabet typing, bella technologies">
+  <meta name="author" content="Bella Technologies">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://oriemiobang.github.io/anywaaboard-window/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="app_icon.png">
+
+  <!-- Open Graph / Facebook / WhatsApp / Telegram -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oriemiobang.github.io/anywaaboard-window/">
+  <meta property="og:title" content="Anywaa Board — Dha Anywaa Keyboard for Windows">
+  <meta property="og:description" content="Type Dha Anywaa (Anuak) on Windows easily. Download free AnywaaBoard.exe with automatic startup and zero configuration.">
+  <meta property="og:image" content="https://oriemiobang.github.io/anywaaboard-window/app_icon.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://oriemiobang.github.io/anywaaboard-window/">
+  <meta property="twitter:title" content="Anywaa Board — Dha Anywaa Keyboard for Windows">
+  <meta property="twitter:description" content="Type Dha Anywaa (Anuak) on Windows easily. Download free AnywaaBoard.exe with automatic startup.">
+  <meta property="twitter:image" content="https://oriemiobang.github.io/anywaaboard-window/app_icon.png">
+
+  <!-- Schema.org SoftwareApplication (Google Rich Search Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Anywaa Board",
+    "operatingSystem": "Windows 10, Windows 11",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Free Dha Anywaa (Anuak) Keyboard for Windows. Type Anywaa characters (ä, ë, ï, ö, ø, dh, nh, ng, th, ny) easily on Windows 10 & 11.",
+    "downloadUrl": "https://github.com/oriemiobang/anywaaboard-window/releases/latest/download/AnywaaBoard.exe",
+    "softwareVersion": "1.0.0",
+    "fileSize": "1.4MB",
+    "author": {
+      "@type": "Organization",
+      "name": "Bella Technologies",
+      "url": "https://bellatechnologies.com"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #1e88e5;
+      --primary-dark: #1565c0;
+      --accent: #2e7d32;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header / Hero */
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 70px 20px 60px;
+      text-align: center;
+      border-bottom: 4px solid var(--primary);
+    }
+    .logo {
+      width: 96px;
+      height: 96px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-size: 1.25rem;
+      color: #94a3b8;
+      max-width: 650px;
+      margin: 0 auto 30px;
+    }
+
+    /* CTA Buttons */
+    .cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-download {
+      background: #2563eb;
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    }
+    .btn-download:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+    }
+    .btn-github {
+      background: #334155;
+      color: #ffffff;
+    }
+    .btn-github:hover {
+      background: #475569;
+      transform: translateY(-2px);
+    }
+    .badge-meta {
+      margin-top: 18px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    /* Sections */
+    section {
+      padding: 50px 0;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0f172a;
+    }
+
+    /* Feature Cards */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+    .card-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Mapping Tables */
+    .table-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th, td {
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: #f1f5f9;
+      font-weight: 700;
+      color: #334155;
+    }
+    tr:last-child td { border-bottom: none; }
+    kbd {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-bottom: 2px solid #94a3b8;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+    .char-preview {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2563eb;
+    }
+
+    /* Steps */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 24px;
+      box-shadow: var(--shadow);
+    }
+    .step-num {
+      width: 40px;
+      height: 40px;
+      background: #eff6ff;
+      color: #2563eb;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      border-top: 1px solid #1e293b;
+    }
+    footer a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .subtitle { font-size: 1.05rem; }
+      .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Header -->
+  <header>
+    <div class="container">
+      <img src="app_icon.png" alt="Anywaa Board Logo" class="logo">
+      <h1>Anywaa Board for Windows</h1>
+      <p class="subtitle">The fastest and easiest way to type in <strong>Dha Anywaa (Anuak)</strong> on any Windows 10 &amp; 11 PC.</p>
+      
+      <div class="cta-group">
+        <a href="https://github.com/oriemiobang/anywaaboard-window/releases/latest/download/AnywaaBoard.exe" class="btn btn-download">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download AnywaaBoard.exe
+        </a>
+        <a href="https://github.com/oriemiobang/anywaaboard-window" class="btn btn-github" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <p class="badge-meta">Version 1.0.0 &bull; 1.4 MB &bull; Windows 10 &amp; 11 &bull; 100% Free &amp; Open Source</p>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why Choose Anywaa Board?</h2>
+      <div class="features-grid">
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Zero Setup Required</h3>
+          <p>Download the single <code>.exe</code> file, double-click, and start typing immediately. No administrative permissions required.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <h3>Automatic Windows Startup</h3>
+          <p>Automatically starts every time your computer turns on. You never have to manually launch it again.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Works in Every App</h3>
+          <p>Works seamlessly in Microsoft Word, Notepad, Google Chrome, WhatsApp Desktop, Telegram, Discord, and all web browsers.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">⌨️</div>
+          <h3>Standard Layout Preserved</h3>
+          <p>Your regular US English typing stays 100% unchanged. Simply hold the <strong>Right Alt (AltGr)</strong> key to type Anywaa characters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Mappings -->
+  <section style="background: #ffffff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <h2 class="section-title">Keyboard Shortcuts</h2>
+      <p style="text-align: center; color: var(--text-muted); margin-bottom: 25px;">
+        Use <kbd>Right Alt</kbd> (AltGr) as your modifier. Hold <kbd>Shift</kbd> for uppercase.
+      </p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Shortcut</th>
+              <th>Types</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>A</kbd></td>
+              <td class="char-preview">ä / Ä</td>
+              <td>a with diaeresis</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>E</kbd></td>
+              <td class="char-preview">ë / Ë</td>
+              <td>e with diaeresis</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>I</kbd></td>
+              <td class="char-preview">ï / Ï</td>
+              <td>i with diaeresis</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>O</kbd></td>
+              <td class="char-preview">ö / Ö</td>
+              <td>o with diaeresis</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>X</kbd></td>
+              <td class="char-preview">ø / Ø</td>
+              <td>o with stroke</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>D</kbd></td>
+              <td class="char-preview">dh / DH</td>
+              <td>digraph dh</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>N</kbd></td>
+              <td class="char-preview">nh / NH</td>
+              <td>digraph nh</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>G</kbd></td>
+              <td class="char-preview">ng / NG</td>
+              <td>digraph ng</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>T</kbd></td>
+              <td class="char-preview">th / TH</td>
+              <td>digraph th</td>
+            </tr>
+            <tr>
+              <td><kbd>Right Alt</kbd> + <kbd>Y</kbd></td>
+              <td class="char-preview">ny / NY</td>
+              <td>digraph ny</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Install -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">How to Install in 3 Easy Steps</h2>
+      <div class="steps">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div>
+            <strong>Download AnywaaBoard.exe</strong>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Click the download button above or get it directly from GitHub Releases.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div>
+            <strong>Double-Click to Run</strong>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">The setup automatically installs to your user programs folder and configures startup.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div>
+            <strong>Start Typing Dha Anywaa!</strong>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Hold <kbd>Right Alt</kbd> and press any vowel or digraph key to type in Anywaa anywhere in Windows.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="https://github.com/oriemiobang/anywaaboard-window/releases/latest/download/AnywaaBoard.exe" class="btn btn-download">
+          Download AnywaaBoard.exe (1.4 MB)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 10px;">
+        <strong>Anywaa Board</strong> is maintained by <a href="https://bellatechnologies.com" target="_blank" rel="noopener">Bella Technologies</a>.
+      </p>
+      <p style="font-size: 0.85rem; color: #64748b;">
+        Free &amp; Open Source Software &bull; <a href="https://github.com/oriemiobang/anywaaboard-window" target="_blank" rel="noopener">GitHub Repository</a> &bull; <a href="https://github.com/oriemiobang/anywaaboard-window/releases" target="_blank" rel="noopener">All Releases</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
