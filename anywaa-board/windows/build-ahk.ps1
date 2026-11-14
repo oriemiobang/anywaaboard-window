@@ -41,9 +41,21 @@ if ([string]::IsNullOrWhiteSpace($Ahk2ExePath) -or
     throw 'Ahk2Exe.exe was not found. Install AutoHotkey v2 or pass -Ahk2ExePath.'
 }
 
+# Locate a v2 base executable for the compiler.
+$base = Join-Path (Split-Path $Ahk2ExePath) '..\v2\AutoHotkey64.exe'
+if (-not (Test-Path -LiteralPath $base -PathType Leaf)) {
+    $base = Join-Path ${env:ProgramFiles} 'AutoHotkey\v2\AutoHotkey64.exe'
+}
+
 New-Item -ItemType Directory -Force -Path $outputDirectory | Out-Null
-& $Ahk2ExePath /in $source /out $output /icon $icon
-if ($LASTEXITCODE -ne 0) {
+
+$ahk2ExeArgs = @('/in', $source, '/out', $output, '/icon', $icon)
+if (Test-Path -LiteralPath $base -PathType Leaf) {
+    $ahk2ExeArgs += @('/base', $base)
+}
+
+& $Ahk2ExePath @ahk2ExeArgs
+if ($LASTEXITCODE -and $LASTEXITCODE -ne 0) {
     throw "Ahk2Exe failed with exit code $LASTEXITCODE."
 }
 
