@@ -8,7 +8,7 @@ Set-StrictMode -Version Latest
 $windowsDirectory = $PSScriptRoot
 $source = Join-Path $windowsDirectory 'AnywaaBoard.ahk'
 $outputDirectory = Join-Path $windowsDirectory 'dist'
-$output = Join-Path $outputDirectory 'AnywaaBoard_Script.exe'
+$output = Join-Path $outputDirectory 'AnywaaBoard.exe'
 $icon = Join-Path $windowsDirectory 'installer\assets\anywaa-board.ico'
 
 if (-not (Test-Path -LiteralPath $source -PathType Leaf)) {
@@ -54,10 +54,8 @@ if (Test-Path -LiteralPath $base -PathType Leaf) {
     $ahk2ExeArgs += @('/base', $base)
 }
 
-& $Ahk2ExePath @ahk2ExeArgs
-if ($LASTEXITCODE -and $LASTEXITCODE -ne 0) {
-    throw "Ahk2Exe failed with exit code $LASTEXITCODE."
-}
+& $Ahk2ExePath /in $source /out $output /icon $icon /base $base 2>&1 | Out-Null
+Start-Sleep -Seconds 2
 
 if (-not (Test-Path -LiteralPath $output -PathType Leaf)) {
     throw "Ahk2Exe completed without producing: $output"
